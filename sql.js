@@ -1,0 +1,18 @@
+const s = {
+  receiverPhone: STRING,
+  receiverFullName: STRING,
+  receiverAddress: STRING,
+  receiverArea: INTEGER,
+  packageMass: INTEGER,
+  packageUnitMass: STRING,
+  packageLong: INTEGER,
+  packageWidth: INTEGER,
+  packageHeight: INTEGER,
+  packageCod: INTEGER,
+  packageUnitCod: STRING,
+  packagePrice: INTEGER,
+  freight: INTEGER,
+  noteTransport: INTEGER,
+  noteCode: STRING,
+  noteMsg: STRING,
+};

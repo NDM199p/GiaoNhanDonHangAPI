@@ -1,4 +1,5 @@
 const { getConnection } = require("../database/index");
+const OrderController = require("./order/controller");
 
 const routers = (app) => {
   app.get("/", (req, res) => {
@@ -15,6 +16,12 @@ const routers = (app) => {
     }
     return res.json(resData);
   });
+
+  app.post("/order", OrderController.save);
+  app.get("/orders", OrderController.findAll);
+  app.put("/order/:id", OrderController.update);
+  app.delete("/order/:id", OrderController.remove);
+  app.get("/order/:id", OrderController.remove);
 };
 
 module.exports = routers;
